@@ -21,8 +21,8 @@ WeatherServer is a Spring Boot application that provides a RESTful API to fetch 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/radziu2402/weather-server.git
-   cd weather-server
+   git clone https://github.com/radziu2402/WeatherServerApp.git
+   cd WeatherServerApp
    ```
 
 2. Configure the API keys in `src/main/resources/application.properties`:
@@ -76,3 +76,28 @@ API documentation is available via Swagger/OpenAPI. After running the applicatio
 http://localhost:8080/api/docs
 ```
 
+## Testing
+
+### Unit Tests
+
+Unit tests have been implemented for various components of the application using JUnit 5 and Mockito. These tests cover the service and mapper layers to ensure the core logic of the application works as expected.
+
+### Integration Tests
+
+Integration tests have been implemented to verify the end-to-end functionality of the application, including the REST API endpoints and their interactions with external services.
+
+#### Technologies Used for Testing
+
+- **JUnit 5**: Used for writing and running tests.
+- **Mockito**: Used for mocking dependencies and verifying interactions.
+- **Spring Boot Test**: Provides support for testing Spring Boot applications, including auto-configuration and test utilities.
+
+#### Running Tests
+
+To run the tests, use the following Maven command:
+
+```sh
+./mvnw test
+```
+
+This command will execute all unit and integration tests and provide a summary of the test results.
